@@ -1,6 +1,10 @@
 {
   "servers": {
-    
+    "high-school-activities": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "uvicorn", "src.app:app", "--reload"]
+    },
     "github": {
       "type": "http",
       "url": "https://api.githubcopilot.com/mcp/"
